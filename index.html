@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Art Guild Balls Animation - Bigger and Spaced Apart</title>
+  <title>Art Guild Balls Animation - Larger & Spaced</title>
   <style>
     body {
       background: #f7f4e6;
@@ -14,39 +14,47 @@
       justify-content: center;
     }
     .balls-container {
-      width: 280px;
-      height: 140px;
+      width: 250px;
+      height: 120px;
       position: relative;
       background: #f7f4e6;
-      border-radius: 10px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     .ball {
       position: absolute;
       border-radius: 50%;
       will-change: transform;
-      opacity: 0.93;
     }
-    /* Ball 1: Left Green/Blue */
+    /* Ball 1: Left Green/Blue - much bigger */
     .ball1 {
-      width: 60px; height: 60px;
-      left: 30px; top: 40px;
-      background: radial-gradient(circle at 40% 50%, #5a7e83 70%, #4c5f70 100%);
+      width: 60px; 
+      height: 60px;
+      left: 30px; 
+      top: 35px;
+      background: radial-gradient(circle at 45% 55%, #5a7e83 76%, #4c5f70 100%);
       animation: updown1 5s ease-in-out infinite;
     }
-    /* Ball 2: Right Yellow/Gold */
+    /* Ball 2: Right Yellow/Gold - bigger */
     .ball2 {
-      width: 50px; height: 50px;
-      left: 140px; top: 55px;
-      background: radial-gradient(circle at 52% 40%, #d1b673 67%, #c3b487 100%);
+      width: 54px; 
+      height: 54px;
+      left: 140px; 
+      top: 38px;
+      background: radial-gradient(circle at 55% 45%, #d1b673 80%, #c3b487 100%);
       animation: updown2 5s ease-in-out infinite;
     }
-    /* Ball 3: Bottom Center Pastel Pink */
+    /* Ball 3: Pastel Pink, larger and more noticeable, spaced down between */
     .ball3 {
-      width: 40px; height: 40px;
-      left: 90px; top: 85px;
-      background: radial-gradient(circle at 50% 50%, #fcd9e5 89%, #f7bfc7 100%);
+      width: 44px; 
+      height: 44px;
+      left: 85px; 
+      top: 67px;
+      background: radial-gradient(circle at 50% 52%, #ffe7ef 88%, #fad1e2 100%);
       animation: updown3 5s ease-in-out infinite;
-      opacity: 0.9;
+      opacity: 0.92;
     }
     @keyframes updown1 {
       0%,100% { transform: translateY(0); }
@@ -54,11 +62,11 @@
     }
     @keyframes updown2 {
       0%,100% { transform: translateY(0); }
-      50%     { transform: translateY(-9px); }
+      50%     { transform: translateY(-10px); }
     }
     @keyframes updown3 {
       0%,100% { transform: translateY(0); }
-      50%     { transform: translateY(-15px); }
+      50%     { transform: translateY(-16px); }
     }
   </style>
 </head>
